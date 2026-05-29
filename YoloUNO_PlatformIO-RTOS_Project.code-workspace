@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "../../IOTS/PROJECT/YoloUNO_PlatformIO-RTOS_Project"
+		},
+		{
+			"name": "YoloUNO_PlatformIO-RTOS_Project",
+			"path": "."
+		}
+	],
+	"settings": {}
+}
