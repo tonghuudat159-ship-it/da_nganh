@@ -20,7 +20,7 @@ int http_get(const char *path, char *response, uint16_t max_len) {
     http.begin(wifiClient, url);
 
     if (strlen(CE_DEVICE_SECRET) > 0) {
-        http.addHeader("Authorization", String("Bearer ") + String(CE_DEVICE_SECRET));
+        http.addHeader("X-Device-Key", CE_DEVICE_SECRET);
     }
 
     http.setTimeout(5000);
@@ -50,7 +50,7 @@ int http_post(const char *path, const char *json_body, char *response, uint16_t 
     http.addHeader("Content-Type", "application/json");
 
     if (strlen(CE_DEVICE_SECRET) > 0) {
-        http.addHeader("Authorization", String("Bearer ") + String(CE_DEVICE_SECRET));
+        http.addHeader("X-Device-Key", CE_DEVICE_SECRET);
     }
 
     http.setTimeout(5000);

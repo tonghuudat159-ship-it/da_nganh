@@ -89,9 +89,9 @@
 // ============================================================
 // BACKEND API CONFIGURATION
 // ============================================================
-#define CE_BACKEND_URL         "http://192.168.1.50:3000"
+#define CE_BACKEND_URL         "http://192.168.1.50:5000"
 #define CE_DEVICE_ID           "esp32-01"
-#define CE_DEVICE_SECRET       ""  // Empty = no auth header
+#define CE_DEVICE_SECRET       "my_esp32_secret_123"
 
 // API Endpoints
 #define API_SENSORS_DATA    "/api/sensors/data"
